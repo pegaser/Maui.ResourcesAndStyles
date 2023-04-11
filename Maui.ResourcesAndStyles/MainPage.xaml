@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.ResourcesAndStyles.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="PageControlTextColor">Blue</Color>
+        </ResourceDictionary>
+        <Color x:Key="PanelBackgroundColor">Blue</Color>
+        <x:String x:Key="One">Hello</x:String>
+        <x:Char x:Key="two">X</x:Char>
+        <x:Single x:Key="three">31.4</x:Single>
+        <x:Double x:Key="four">27.1</x:Double>
+        <x:Byte x:Key="five">8</x:Byte>
+        <x:Int16 x:Key="six">16</x:Int16>
+        <x:Int32 x:Key="seven">32</x:Int32>
+        <x:Int64 x:Key="eight">64</x:Int64>
+        <x:Decimal x:Key="nine">12345</x:Decimal>
+        <x:TimeSpan x:Key="ten">1.23:5959</x:TimeSpan>
+        <x:Boolean x:Key="eleven">True</x:Boolean>
+        <OnPlatform x:Key="textColor" x:TypeArguments="Color">
+            <On Platform="iOS" Value="Silver" />
+            <On Platform="Android" Value="Green" />
+            <On Platform="WinUI" Value="Yellow" />
+            <On Platform="MacCatalyst" Value="Pink" />
+        </OnPlatform>
+    </ContentPage.Resources>
+    <VerticalStackLayout  Spacing="25" Padding="30,0" VerticalOptions="Center" Background="{DynamicResource PanelBackgroundColor}">
+        <Label TextColor="Blue" FontSize="14" Text="Hola Label" />
+        <Button TextColor="Blue" FontSize="14" Text="Hola Botón" />
+        <Label Text="Hola Label 2">
+            <Label.Resources>
+                <TextTransform x:Key="PageControlTextColor">Lowercase</TextTransform>
+            </Label.Resources> 
+        </Label>
+        <Label TextColor="{StaticResource PageControlTextColor}" FontSize="14" Text="Hola Label 3"></Label>
+        <Label TextColor="{StaticResource textColor}" 
+               FontSize="{StaticResource four}" Text="Hola Label 4"></Label>
+        <Button Clicked="Button_Clicked" Text="Click Me"></Button>
+    </VerticalStackLayout>
+</ContentPage>
