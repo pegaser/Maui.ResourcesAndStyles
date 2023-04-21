@@ -1,0 +1,23 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Maui.ResourcesAndStyles.Homework"
+             x:Class="Maui.ResourcesAndStyles.Homework.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Color x:Key="bgColor">Violet</Color>
+            <x:Double x:Key="fontSize">40</x:Double>
+
+            <Style x:Key="baseLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="{StaticResource fontSize}" />
+            </Style>
+            <Style x:Key="MyLabelStyle" BasedOn="{StaticResource baseLabelStyle}" TargetType="Label">
+                <Setter Property="Background" Value="{StaticResource bgColor}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
