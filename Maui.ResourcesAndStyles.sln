@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31611.283
@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.ResourcesAndStyles", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.ResourcesAndStyle.Styles", "Maui.ResourcesAndStyle.Styles\Maui.ResourcesAndStyle.Styles.csproj", "{48D70789-2A31-44A8-ADDB-3871526350DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.ResourcesAndStyle.WideApp", "Maui.ResourcesAndStyle.WideApp\Maui.ResourcesAndStyle.WideApp.csproj", "{4D98C606-7641-4B76-833E-4BC79F499443}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.ResourcesAndStyle.WideApp", "Maui.ResourcesAndStyle.WideApp\Maui.ResourcesAndStyle.WideApp.csproj", "{4D98C606-7641-4B76-833E-4BC79F499443}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maui.ResourcesAndStyles.Homework", "Maui.ResourcesAndStyles.Homework\Maui.ResourcesAndStyles.Homework.csproj", "{5E606B4E-B8E8-470D-B6A6-5778D28C399F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.ResourcesAndStyles.Homework", "Maui.ResourcesAndStyles.Homework\Maui.ResourcesAndStyles.Homework.csproj", "{5E606B4E-B8E8-470D-B6A6-5778D28C399F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
